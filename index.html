@@ -16,6 +16,10 @@
     <!-- Css Dark/Light Mode -->
     <link rel="stylesheet" href="darkmode/darkmode.css">
     <title>WebBlog</title>
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <style>
         #nav {
@@ -32,9 +36,8 @@
             height: 250px;
             background-color: rgb(0, 0, 0);
             color: white;
-
         }
-
+        
         #body {
             background-color: #BD0F4E;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpath fill='%23ca0e52' d='M486 705.8c-109.3-21.8-223.4-32.2-335.3-19.4C99.5 692.1 49 703 0 719.8V800h843.8c-115.9-33.2-230.8-68.1-347.6-92.2C492.8 707.1 489.4 706.5 486 705.8z'/%3E%3Cpath fill='%23d70d57' d='M1600 0H0v719.8c49-16.8 99.5-27.8 150.7-33.5c111.9-12.7 226-2.4 335.3 19.4c3.4 0.7 6.8 1.4 10.2 2c116.8 24 231.7 59 347.6 92.2H1600V0z'/%3E%3Cpath fill='%23e50c5b' d='M478.4 581c3.2 0.8 6.4 1.7 9.5 2.5c196.2 52.5 388.7 133.5 593.5 176.6c174.2 36.6 349.5 29.2 518.6-10.2V0H0v574.9c52.3-17.6 106.5-27.7 161.1-30.9C268.4 537.4 375.7 554.2 478.4 581z'/%3E%3Cpath fill='%23f20b5f' d='M0 0v429.4c55.6-18.4 113.5-27.3 171.4-27.7c102.8-0.8 203.2 22.7 299.3 54.5c3 1 5.9 2 8.9 3c183.6 62 365.7 146.1 562.4 192.1c186.7 43.7 376.3 34.4 557.9-12.6V0H0z'/%3E%3Cpath fill='%23F61466' d='M181.8 259.4c98.2 6 191.9 35.2 281.3 72.1c2.8 1.1 5.5 2.3 8.3 3.4c171 71.6 342.7 158.5 531.3 207.7c198.8 51.8 403.4 40.8 597.3-14.8V0H0v283.2C59 263.6 120.6 255.7 181.8 259.4z'/%3E%3Cpath fill='%23f33278' d='M1600 0H0v136.3c62.3-20.9 127.7-27.5 192.2-19.2c93.6 12.1 180.5 47.7 263.3 89.6c2.6 1.3 5.1 2.6 7.7 3.9c158.4 81.1 319.7 170.9 500.3 223.2c210.5 61 430.8 49 636.6-16.6V0z'/%3E%3Cpath fill='%23f24f8a' d='M454.9 86.3C600.7 177 751.6 269.3 924.1 325c208.6 67.4 431.3 60.8 637.9-5.3c12.8-4.1 25.4-8.4 38.1-12.9V0H288.1c56 21.3 108.7 50.6 159.7 82C450.2 83.4 452.5 84.9 454.9 86.3z'/%3E%3Cpath fill='%23f16b9c' d='M1600 0H498c118.1 85.8 243.5 164.5 386.8 216.2c191.8 69.2 400 74.7 595 21.1c40.8-11.2 81.1-25.2 120.3-41.7V0z'/%3E%3Cpath fill='%23f186ad' d='M1397.5 154.8c47.2-10.6 93.6-25.3 138.6-43.8c21.7-8.9 43-18.8 63.9-29.5V0H643.4c62.9 41.7 129.7 78.2 202.1 107.4C1020.4 178.1 1214.2 196.1 1397.5 154.8z'/%3E%3Cpath fill='%23F2A0BE' d='M1315.3 72.4c75.3-12.6 148.9-37.1 216.8-72.4h-723C966.8 71 1144.7 101 1315.3 72.4z'/%3E%3C/g%3E%3C/svg%3E");
@@ -42,22 +45,27 @@
             background-size: cover;
             color: #F7F4D5;
             position: absolute;
-            top: 250px;
+            top: 190px;
             width: 100%;
             height: 800px;
             padding: 2px;
         }
-
+        
+        #logo {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 35px;
+        }
+        
         .main {
             margin: auto;
             width: 1050px;
         }
-
+        
         #nome,
         #link {
             display: inline-block;
         }
-
+        
         #container {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
             position: absolute;
@@ -66,6 +74,25 @@
             width: 1050px;
             height: 100%;
             background-color: cornsilk;
+            padding: 15px;
+        }
+        
+        #btentrar {
+            margin-left: 50%;
+            font-size: 20px;
+            font-family: 'Bebas Neue', cursive;
+            top: 10px;
+            width: 150px;
+            background: transparent;
+            color: #BD0F4E;
+            border: 1px solid #BD0F4E;
+            border-radius: 12px;
+        }
+        
+        #btentrar:hover {
+            background: #BD0F4E;
+            color: white;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -78,15 +105,28 @@
                 <!--nome da pagina-->
                 <div class="nome">
                     <div class="container-fluid">
-                        <span class="navbar-brand mb-0 h1">WebBlog</span>
+                        <span id="logo" class="navbar-brand mb-0 h1">WebBlog</span>
                     </div>
                 </div>
                 <!--links da nave-->
                 <div class="link">
-                    <form class="container-fluid justify-content-start">
-                        <button class="btn btn-outline-success me-2" type="button">Main button</button>
-                        <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-                    </form>
+                    <div class="row">
+                        <div class="nav-item">
+                            <form style="margin-right: 15px;">
+                                <button id="btentrar" type="button">Home</button>
+                            </form>
+                        </div>
+                        <div class="nav-item">
+                            <form style="margin-right: 15px;">
+                                <button id="btentrar" type="button">Articles</button>
+                            </form>
+                        </div>
+                        <div class="nav-item">
+                            <form style="margin-right: 75px;">
+                                <button id="btentrar" type="button">About Us</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -96,31 +136,80 @@
     <div id="body">
         <div class="main">
             <div id="container">
+                <!--exemplo-->
+                <br><br><br>
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title that wraps to a new line</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    <div class="card p-3">
+                        <blockquote class="blockquote mb-0 card-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="..." alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card bg-primary text-white text-center p-3">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                            <footer class="blockquote-footer">
+                                <small>
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img" src="..." alt="Card image">
+                    </div>
+                    <div class="card p-3 text-right">
+                        <blockquote class="blockquote mb-0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                          </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- Chamando bibliotecas e páginas js -->
         <!-- Bibliotecas do JQuery (Faz as Animações) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"
-            integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- JavaScript (Bootstrap) -->
         <!-- JS Geral -->
         <script src="bootstrap/js/bootstrap.min.js"></script>
