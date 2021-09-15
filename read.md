@@ -1,1 +1,1 @@
-Projeto de WEBBLOG sobre tecnologia e pandemia 
+Projeto de WEBBLOG sobre tecnologia e pandemia :)
