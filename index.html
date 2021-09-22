@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MetaTags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Estilização CSS (Bootstrap) -->
+    <!-- Componentes Gerais -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Sistema de Grid do Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <!-- Estilização Manual (style.css) -->
+    <link rel="stylesheet" href="style.css">
+    <title>WebBlog</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Cabeçalho-->
+    <div id="nav" role="navigation">
+        <div class="main" role="region">
+            <!-- Navbar -->
+            <nav class="navbar navbar-trasparent bg-none" style="margin-left: -22px;">
+                <!-- Logo -->
+                <div class="nome" role="region">
+                    <div class="container-fluid" role="region">
+                        <span id="logo" class="typing-animation cursor" role="region">WebBlog</span>
+                    </div>
+                </div>
+                <!-- Links -->
+                <div class="link" role="region">
+                    <div class="row" role="row">
+                        <!-- Home -->
+                        <div class="nav-item" role="region">
+                            <form style="margin-right: 15px;" role="region">
+                                <button id="btndisable" aria-placeholder="Home" role="button" type="button" style="background-color: #BD0F4E; color: white">Home</button>
+                            </form>
+                        </div>
+                        <!-- Articles -->
+                        <div class="nav-item" role="region">
+                            <form style="margin-right: 15px;" role="region">
+                                <a href="article.html"><button id="btentrar" aria-placeholder="Articles" role="button" type="button">Articles</button></a>
+                            </form>
+                        </div>
+                        <!-- About Us -->
+                        <div class="nav-item" role="region">
+                            <form style="margin-right: 75px;" role="region">
+                                <a href="about.html"><button id="btentrar" aria-placeholder="About Us" role="button"
+                                        type="button">About Us</button></a>
+                            </form>
+                        </div>
+                        <!-- InputPesquisa -->
+                        <div class="nav-item" role="region">
+                            <input class="inputPesquisa" role="textbox" placeholder="What you're looking for?" style="margin-left: 15px;">
+                            <a href="index.html"><button id="lupa" role="search" type="button"><span><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                            <path
+                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                            </path>
+                                        </svg></span></button></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--Rodapé-->
+    <footer>
+    </footer>
+
+    <!--Corpo-->
+    <div id="body" role="region">
+        <div class="main" role="main">
+            <!--Container-->
+            <div id="container" role="region">
+                <!-- Sessão "Últimas Noticias" -->
+                <div class="row" role="region">
+                    <!--Linha Esquerda-->
+                    <hr style=" background-color: black; color: black; size: 50%; width: 42%;">
+                    <h2>Latest News</h2>
+                    <!--Linha Direita-->
+                    <hr style="background-color: black; color: black; size: 50%; width: 42%;">
+                </div>
+                <!-- Cards Artigos -- Linha 1 -->
+                <div class="row" id="center" role="region">
+
+                    <!--Col-8-->
+                    <div class="col-md-8" id="center" role="region">
+                        <!-- Card -- "Tecnologia e Pandemia" -->
+                        <div class="card" role="article">
+                            <!-- Cabeçalho do Card -->
+                            <div class="cardTop" role="region">
+                                <a href="article.html">
+                                    <p id="titulo" role="text">The importance of technology in pandemic times</p>
+                                </a>
+                            </div>
+                            <!-- Imagem do Card -->
+                            <a href="article.html"><img id="sombra" src="img/art1.png" role="img" alt="Woman with mask using a system" id="center" width="100%" style="border-radius: 5px;"></a>
+                            <!-- Corpo do Card -->
+                            <div class="cardCorpo" role="region">
+                                <p id="text" role="text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <!-- Rodapé do Card-"Barra de Favoritos" -->
+                            <div class="cardFav" id="center" role="region">
+                                <!--Ícones Divisões-->
+                                <div class="row" role="row">
+                                    <!--Visualizações-->
+                                    <div class="col-md-4" style="text-align: center;" role="region">
+                                        <!--Ícone Olho-->
+                                        <span role="region">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                                <path
+                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                            </svg> 1230
+                                        </span>
+                                    </div>
+                                    <!--Comentários-->
+                                    <div class="col-md-4" style="text-align: center;" role="region">
+                                        <!--Ícone Chat-->
+                                        <span role="region">
+                                            <svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 "
+                                                fill="currentColor " class="bi bi-chat-right-dots-fill "
+                                                viewBox="0 0 16 16 ">
+                                                <path
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2z " />
+                                            </svg> 552
+                                        </span>
+                                    </div>
+                                    <!--Corações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Coração-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 "
+                                                fill="currentColor " class="bi bi-heart-fill " viewBox="0 0 16 16 ">
+                                                <path fill-rule="evenodd "
+                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z " />
+                                            </svg> 34</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Col-4 -- "Cards Laterais"-->
+                    <div class="col-md-4 " id="center " role="region">
+
+                        <!--Card -- "Windows 11"-->
+                        <div class="card2 " role="article">
+                            <!--Cabeçalho do Card-->
+                            <div class="cardTop " role="region">
+                                <p role="text">Windows 11: Announcements And Analysis</p>
+                            </div>
+                            <!--Imagem do Card-->
+                            <a href="index.html "><img src="img/art2.png " id="sombra" role="img" alt="windows 11 image" id="center " width="100% " style="border-radius: 5px; "></a>
+                            <!--Corpo do Card-->
+                            <div class="cardCorpo " role="region">
+                                <p id="text2" role="text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <!-- Rodapé do Card-"Barra de Favoritos" -->
+                            <div class="cardFav2 " id="center" role="region">
+                                <!--Ícones Divisões-->
+                                <div class="row" role="row">
+                                    <!--Visualizações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Olho-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-eye-fill " viewBox="0 0 16 16 ">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z " />
+                                                <path
+                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z " />
+                                            </svg> 319</span>
+                                    </div>
+                                    <!--Comentários-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region" ">
+                                        <!--Ícone Chat-->
+                                        <span role="region "><svg xmlns=" http://www.w3.org/2000/svg " width=" 20 " height=" 20 " fill=" currentColor " class=" bi bi-chat-right-dots-fill " viewBox=" 0 0 16 16 ">
+                                            <path d=" M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2
+                                        1 1 0 0 1 0 2z "/>
+                                          </svg> 238</span>
+                                    </div>
+                                    <!--Corações-->
+                                    <div class=" col-md-4 " style="text-align: center; " role="region ">
+                                       <!--Ícone Coração-->
+                                        <span role="region "><svg xmlns=" http://www.w3.org/2000/svg " width=" 20 " height=" 20 " fill=" currentColor " class=" bi bi-heart-fill " viewBox=" 0 0 16 16 ">
+                                            <path fill-rule=" evenodd " d=" M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z "/>
+                                          </svg> 25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Espaçamento para alinhar o tamanhos dos cards-->
+                        <div class=" espaco "></div>
+                        
+                        <!--Card -- "WhatsApp "-->
+                        <div class=" card2 " role="article ">
+                            <!--Cabeçalho do Card-->
+                            <div class=" cardTop " role="region ">
+                                <p role="text ">New WhatsApp colors displease users</p>
+                            </div>
+                            <!--Imagem do Card-->
+                            <a href=" index.html "><img role="img " id="sombra " alt="Whatsapp app image with new color update " src=" img/art3.png " id=" center " width=" 100% " style=" border-radius: 5px; "></a>
+                            <!--Corpo do Card-->
+                            <div class=" cardCorpo " role="region ">
+                                <p id=" text2 " role="text " style=" font-family: 'Roboto' , sans-serif; font-size: 2vh; margin-top: 5%; margin: 5%; ">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <!-- Rodapé do Card-"Barra de Favoritos " -->                            
+                            <div class=" cardFav2 " id=" center " role="region ">
+                                <!--Ícones Divisões-->                                
+                                <div class=" row " role="row ">
+                                    <!--Visualizações-->
+                                    <div class=" col-md-4 " style=" text-align: center; " role="region ">
+                                        <!--Ícone Olho-->
+                                        <span role="region "><svg xmlns=" http://www.w3.org/2000/svg " width=" 20 " height=" 20 " fill=" currentColor " class=" bi bi-eye-fill " viewBox=" 0 0 16 16 ">
+                                            <path d=" M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z "/>
+                                            <path d=" M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z "/>
+                                          </svg> 11</span>
+                                    </div>
+                                    <!--Comentários-->
+                                    <div class=" col-md-4 " style=" text-align: center; " " role="region">
+                                        <!--Ícone Chat-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-chat-right-dots-fill "
+                                                viewBox="0 0 16 16 ">
+                                                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2
+                                        1 1 0 0 1 0 2z " />
+                                            </svg> 4</span>
+                                    </div>
+                                    <!--Corações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Coração-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-heart-fill " viewBox="0 0 16 16 ">
+                                                <path fill-rule="evenodd "
+                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z " />
+                                            </svg> 25</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div><br>
+                <!-- Cards Artigos -- Linha 2 -->
+                <div class="row " id="center " role="region">
+                    <!--Col-8-->
+                    <div class="col-md-8 " id="center " role="region">
+
+                        <!-- Card -- "Iphone 13" -->
+                        <div class="card " role="article">
+                            <!--Cabeçalho do Card-->
+                            <div class="cardTop " role="region">
+                                <p role="text">iPhone 13: first unboxing published!</p>
+                            </div>
+                            <!--Imagem do Card-->
+                            <a href="index.html "><img role="img" id="sombra" alt="Iphone 13 Image" src="img/art4.png " id="center " width="100% " style="border-radius: 5px; "></a>
+                            <!--Corpo do Card-->
+                            <div class="cardCorpo" role="region">
+                                <p role="text" id="text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <!-- Rodapé do Card-"Barra de Favoritos" -->
+                            <div class="cardFav" id="center" role="region">
+                                <!--Ícones Divisões-->
+                                <div class="row" role="row">
+                                    <!--Visualizações-->
+                                    <div class="col-md-4" style="text-align: center;" role="region">
+                                        <!--Ícone Olho-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z" />
+                                                <path
+                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z" />
+                                            </svg> 203</span>
+                                    </div>
+                                    <!--Comentários-->
+                                    <div class="col-md-4" style="text-align: center;" role="region">
+                                        <!--Ícone Chat-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 "
+                                                fill="currentColor " class="bi bi-chat-right-dots-fill "
+                                                viewBox="0 0 16 16 ">
+                                                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2
+                                        1 1 0 0 1 0 2z " />
+                                            </svg> 8</span>
+                                    </div>
+                                    <!--Corações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Coração-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="25 " height="25 "
+                                                fill="currentColor " class="bi bi-heart-fill " viewBox="0 0 16 16 ">
+                                                <path fill-rule="evenodd "
+                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z " />
+                                            </svg> 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Col-4-->
+                    <div class="col-md-4 " id="center " role="region">
+                        <!-- Card -- "Processadores" -->
+                        <div class="card " role="article">
+                            <!--Cabeçalho do Card-->
+                            <div class="cardTop " role="region">
+                                <p role="text">increase in processor prices</p>
+                            </div>
+                            <!--Imagem do Card-->
+                            <a href="index.html "><img role="img" id="sombra" alt="Processor image" src="img/art5.png " id="center " width="100% " style="border-radius: 5px; "></a>
+                            <!--Corpo do Card-->
+                            <div class="cardCorpo" role="region">
+                                <p role="text" id="text" style="font-family: 'Roboto', sans-serif; font-size: 2.15vh; margin-top: 5%; margin: 5%; ">
+                                    This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <!--Cabeçalho do Card-->
+                            <div class="cardFav2" id="center" style="margin-top: 5%;" role="region">
+                                <!--Ícones Divisões-->
+                                <div class=" row " role="row">
+                                    <!--Visualizações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Olho-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-eye-fill " viewBox="0 0 16 16 ">
+                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z " />
+                                                <path
+                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z " />
+                                            </svg> 24</span>
+                                    </div>
+                                    <!--Comentários-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--ícone Chat-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-chat-right-dots-fill "
+                                                viewBox="0 0 16 16 ">
+                                                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 1 0-2
+                                1 1 0 0 1 0 2z " />
+                                            </svg> 12</span>
+                                    </div>
+                                    <!--Corações-->
+                                    <div class="col-md-4 " style="text-align: center; " role="region">
+                                        <!--Ícone Coração-->
+                                        <span role="region"><svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 "
+                                                fill="currentColor " class="bi bi-heart-fill " viewBox="0 0 16 16 ">
+                                                <path fill-rule="evenodd "
+                                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z " />
+                                            </svg> 2</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chamando bibliotecas e páginas js -->
+    <!-- Bibliotecas do JQuery (Faz as Animações) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js " integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+    <!-- JavaScript (Bootstrap) -->
+    <!-- JS Geral -->
+    <script src="bootstrap/js/bootstrap.min.js "></script>
+    <!-- JS Dropdown -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js "></script>
+</body>
+
+</html>
