@@ -1,1 +1,3 @@
-"WEBBLOG" is a Project of a blog on technology and pandemic
+Projeto de um blog com o tema "Tecnologia e Pandemia"
+
+🌐: https://web-blog-kappa.vercel.app/ 
